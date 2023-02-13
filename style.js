@@ -48,7 +48,7 @@ window.addEventListener("load", eventWindowLoaded, false);
 
       $(document).ready(function(){
         var $randomString = $(".str");
-        var $timer = 30;
+        var $timer = 8;
         var $it;
         var $data = 0;
         var $index;
