@@ -53,7 +53,7 @@ window.addEventListener("load", eventWindowLoaded, false);
         var $data = 0;
         var $index;
         var $change;
-        var $letters = ["A","r","e"," ","Y","o","u"," ","R","e","a","d","y"," ","F","o","r"," ","P","r","a", "t", "h", "a", "m", "?"];
+        var $letters = ["A","r","e","  ","Y","o","u"," "," "," ","R","e","a","d","y"," ","F","o","r"," ","P","r","a", "t", "h", "a", "m", "?"];
         //var $letters = ["S","t","a","c","k","f","i","n","d","o","v","e","r"]; 
 
         $randomString.each(function(){
