@@ -1,0 +1,66 @@
+<!doctype html>
+ <html>
+   <head>
+     <title>PRATHAM-2023</title>
+     <link rel="stylesheet" type= "text/css" href="style.css">
+   </head>
+   <body>
+    
+     <header>
+       <a href="#" class="logo">PRATHAM</a>
+       <ul>
+         <li><a href="index.html" class="active1">Home</a></li>
+         <li><a href="#sec">About</a></li>
+         <li><a href="#sec1">Merchandise</a></li>
+         <li><a href="faq.html">FAQs</a></li>
+         <li><a href="#">Contact</a></li>
+
+       </ul>
+     </header>
+     <section>
+      <img src="stars.png" id="stars">
+      <img src="moon.png" id="moon">
+      <img src="mountains_behind.png" id="mountains_behind">
+      <h2 id="text">PRATHAM- 2023</h2>
+      <a href="events.html" id="btn">EVENTS</a>
+      <img src="mountains_front.png" id="mountains_front">
+     </section>
+     <div class ="sec" id ="sec">
+      <h2>About Pratham- 2023 -></h2>
+      <p>Pratham is a event which is organised by ATL DAV KN members in DAV Public School, Koyla Nagar Dhanabd. There will be a three day workshop from 7th to 9th of April. There will be 3 events during this period. Any student from class 6 to 12 of DAV KN can participate in the events.</p><br>
+      <p>Link to register -> </p>
+    </div>
+
+     <div class ="sec" id ="sec1">
+      <h2>Merchandise -></h2>
+      <center><img class =" zoom" width = "600px" src="comingsoon.jpg" alt=""></center>
+
+     
+
+      </div>
+
+     <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let mountains_front = document.getElementById('mountains_front');
+      let header = document.querySelector('header')
+
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.left = value * 0.5 + 'px';
+        mountains_front.style.left = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+
+
+      })
+     </script>
+   </body>
+ </html>
