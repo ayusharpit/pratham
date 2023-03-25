@@ -249,3 +249,7 @@ flex-direction: column;
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }  
+.message{
+    text-align: justify;
+    
+}
