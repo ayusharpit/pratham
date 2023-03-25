@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700,800,900&diplay=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active1
+
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522,transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front
+{
+    z-index: 10;
+}
+
+
+#text{
+    position: absolute;
+    right: -350px;
+    color: #ecf0ea;
+    white-space: nowrap;
+    font-size: 6vw;
+    z-index: 9;
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+}
+
+
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+
+  .zoom {
+    padding: 50px;
+    
+    transition: transform .2s; /* Animation */
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .faq-heading{
+    border-bottom: #ffffff;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #000000;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #ffffff;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #000000;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}  
+.message{
+    text-align: justify;
+    
+}
