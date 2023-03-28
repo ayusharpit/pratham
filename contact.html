@@ -1,71 +1,174 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team</title>
+    <style>
+      .team-container {
+  font-family: "Roboto", sans-serif;
+  padding: 24px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-<head>
-  <title>PRATHAM-2023</title>
-  <link rel="stylesheet" type="text/css" href="src/css/style.css">
-</head>
+.team-container h2 {
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 8px;
+  background: #222;
+  color: #eee;
+  width: 500px;
+  margin: 48px auto;
+}
 
-<body style="background-color:#1c0522";>
+.team-container .ceo {
+  text-align: center;
+  padding: 8px;
+}
 
-  <header>
-    <a href="#" class="logo">PRATHAM</a>
-    <ul>
-      <li><a href="index.html" class="active1">Home</a></li>
-      <li><a href="#sec">About</a></li>
-      <li><a href="message.html">Message</a></li>
-      <li><a href="#sec2">Merchandise</a></li>
-      <li><a href="faq.html">FAQs</a></li>
-      <li><a href="contact.html">Team</a></li>
+.team-container .ceo img {
+  width: 200px;
+  height: 200px;
+}
 
-    </ul>
-  </header>
-  <section>
-    <img src="src/img/stars.png" id="stars">
-    <img src="src/img/moon.png" id="moon">
-    <img src="src/img/mountains_behind.png" id="mountains_behind">
-    <h2 id="text">PRATHAM- 2023</h2>
-    <a href="events.html" id="btn">EVENTS</a>
-    <img src="src/img/mountains_front.png" id="mountains_front">
-  </section>
+.team-container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 0 8px 29px -17px rgba(0, 0, 0, 0.4);
+}
 
-  <div class="sec" id="sec">
-    <h2>About Pratham- 2023 -></h2>
-    <p>Pratham is a event which is organised by ATL DAV KN members in DAV Public School, Koyla Nagar Dhanabd. There will
-      be a three day workshop from 7th to 9th of April. There will be 3 events during this period. Any student from
-      class 6 to 12 of DAV KN can participate in the events.</p><br>
-    <p>Link to register -> </p>
+.team-member {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+}
+
+.team-container .team-member-name {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+.team-container .ceo .team-member-name {
+  font-size: 28px;
+}
+
+.core-team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-container h3 {
+  text-align: center;
+  margin: 48px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+    </style>
+  </head>
+  <body>
+    <div class="team-container">
+      <h2 class="team-heading">Convener</h2>
+      <div class="ceo">
+        <div class="profile-pic">
+          <img src="src/img/bksingh.png" alt="" />
+        </div>
+
+        <div class="team-member-name">BK Singh</div>
+        <div class="meta">Department of IT</div>
+        <div class="meta"><font color = "grey">bksingh.davkn@gmail.com   </font>      </div>
+
+      </div>
+
+      <h2 class="team-heading">Overall Head</h2>
+
+      <div class="core-team-container">
+        <div class="team-member">
+          <div class="profile-pic">
+            <img src="src/img/samrat.png" alt="" />
+          </div>
+
+      
+
+          <div class="team-member-name">Samrat Bose</div>
+          <div class="meta"><font color = "grey">samratofficial2009@gmail.com  </font>      </div>      </div>
+
+        
+
+        
+
+      </div>
+
+      <h2 class="team-heading">Heads</h2>
+
+      <div class="core-team-container">
+        <div class="team-member">
+          <div class="profile-pic">
+            <img src="src/img/mayank.png" alt="" />
+          </div>
+
+      
+
+          <div class="team-member-name">Mayank Kumar</div>
+        <div class="meta"> Branding & Relation Cell Head</div>
+        <div class="meta"> <font color = "grey">innovativecreations195@gmail.com</font></div>
+       
+
+
+      </div>
+
+      <div class="team-member">
+        <div class="profile-pic">
+          <img src="src/img/priyanshu.png" alt="" />
+
+          
+        </div>
+
+    
+
+        <div class="team-member-name">Priyanshu Goswami</div>
+      <div class="meta"> Core Team Head</div>
+      <div class="meta"> <font color = "grey">priyanshugoswami.dude@gmail.com</font></div>
+
+    </div>
+
+    <div class="team-member">
+      <div class="profile-pic">
+        <img src="src/img/Ayan.png" alt="" />
+      </div>
+
+  
+
+      <div class="team-member-name">Ayan Choudhary</div>
+    <div class="meta"> Tech Head</div>
+    <div class="meta"> <font color = "grey">nightmae097@gmail.com</font></div>
+
   </div>
-  <div class="sec" id="sec2">
-    <h2>Merchandise -></h2>
-    <center><img class=" zoom" width="600px" src="src/img/comingsoon.jpg" alt=""></center>
+        
+  <div class="team-member">
+    <div class="profile-pic">
+      <img src="src/img/images.png" alt="" />
+    </div>
 
 
-  </div>
 
-  <script>
-    let stars = document.getElementById('stars');
-    let moon = document.getElementById('moon');
-    let mountains_behind = document.getElementById('mountains_behind');
-    let text = document.getElementById('text');
-    let btn = document.getElementById('btn');
-    let mountains_front = document.getElementById('mountains_front');
-    let header = document.querySelector('header')
+    <div class="team-member-name">Ayush Arpit</div>
+  <div class="meta"> Web Head</div>
+  <div class="meta"> <font color = "grey">ayusharpit.nayak@gmail.com</font></div>
 
-    window.addEventListener('scroll', function () {
-      let value = window.scrollY;
-      stars.style.left = value * 0.25 + 'px';
-      moon.style.top = value * 1.05 + 'px';
-      mountains_behind.style.left = value * 0.5 + 'px';
-      mountains_front.style.left = value * 0 + 'px';
-      text.style.marginRight = value * 4 + 'px';
-      text.style.marginTop = value * 1.5 + 'px';
-      btn.style.marginTop = value * 1.5 + 'px';
-      header.style.top = value * 0.5 + 'px';
+</div>
+        
 
-
-    })
-  </script>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
