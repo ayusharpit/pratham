@@ -129,31 +129,39 @@
     }
     
     .action {
-        color: #fff;
-        border: 3px solid #fff;
-        background-color: transparent;
         position: absolute;
-        top: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60%;
-        outline: none;
-        cursor: pointer;
-        padding: 12px;
-        text-transform: uppercase;
-        font-size: 1.3em;
-        font-weight: bold;
-        letter-spacing: 2px;
-        transition: background-color 0.4s, top 0.4s;
+        left: 25%;
+        width: 100%;
     }
     
     .item-container:hover .action {
         top: 50px;
     }
     
-    .action:hover {
+    .btn:hover {
         background-color: rgba(255, 255, 255, 0.2);
-    }</style>
+    }
+    .btn{
+        color: #fff;
+        border: 3px solid #fff;
+        background-color: transparent;
+        transform: translateX(-50%);
+        outline: none;
+        cursor: pointer;
+        padding: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: background-color 0.4s, top 0.4s;
+        width: 45%;
+        padding: 10px; /* Some padding */
+        margin: 5px;
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+    }
+
+    
+    </style>
 </head>
 <body >
     
@@ -169,8 +177,8 @@
   </header>
     <video autoplay muted loop id="myVideo">
         <source src="src/vid/team-bg.mp4" type="video/mp4">
-      </video>
-      <div class="container">
+    </video>
+    <div class="container">
 
         <div class="item-container">
             <div class="img-container">
@@ -183,13 +191,13 @@
                 <div class="event-info">
                     <p class="title">Line-Follower</p>
                     <div class="separator"></div>
-                    <p class="info">Class 7 - 12</p>
-                    <p class="price"> April 8</p>
+                    <p class="info">Class 5 - 12</p>
+                    <p class="price"> April 7</p>
 
                     <div class="additional-info">
                         <p class="info">
                             <i class="fas fa-map-marker-alt"></i>
-                            You just need to make  a line-follower robot to take part in this event!
+                            Teams have to build an autonomous bot that can follow a black line over a contrasting surface.
                         </p>
                         <p class="info">
                             <i class="far fa-calendar-alt"></i>
@@ -202,7 +210,10 @@
                         </p>
                     </div>
                 </div>
-                <button class="action">Register Soon</button>
+                <div class="action">
+                <button class="btn">Details</button>
+                <button class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSefn1TR6BC-GAmywWT8SytEYFEnjXht29xuLJGEQcBG7ZoIwQ/viewform?usp=sf_link">Register</button>
+            </div>
             </div>
         </div>
 
@@ -236,8 +247,11 @@
                             
                         </p>
                     </div>
+                </div>                
+                <div class="action">
+                    <button class="btn">Details</button>
+                    <button class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdtxAhJlRNtl-ol-P9JyCIGPrEKTu5E4Fjzj7c7KTUUtqggHw/viewform?usp=sf_link">Register</button>
                 </div>
-                <button class="action">Register Soon</button>
             </div>
         </div>
 
@@ -252,7 +266,7 @@
                 <div class="event-info">
                     <p class="title">Cube Solving</p>
                     <div class="separator"></div>
-                    <p class="info">Class 7 - 12</p>
+                    <p class="info">Class 5 - 12</p>
                     <p class="price"> April 8</p>
 
                     <div class="additional-info">
@@ -271,7 +285,12 @@
                         </p>
                     </div>
                 </div>
-                <button class="action">Register Soon</button>
+                <div class="action">
+                    <button class="btn">Details</button>
+                    <button class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfrLhYKBuC8SfCfiNPBiOjHxUd8PKgnhRNsXWuZ5erCiP478g/viewform?usp=sf_link">Register</button>
+                </div>
+
+                
             </div>
         </div>
 
