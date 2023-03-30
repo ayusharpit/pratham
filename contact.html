@@ -82,6 +82,14 @@
   text-transform: uppercase;
   font-weight: normal;
 }
+.myvideo{
+  position: relative;
+  width: 80%;
+}
+.container{
+  position: relative;
+  min-width: 100%;
+}
     </style>
   </head>
   <body style="background-color:#1c0522";>
@@ -96,6 +104,10 @@
   
       </ul>
     </header>
+    <video autoplay muted loop id="myVideo">
+      <source src="src/vid/lines.mp4" type="video/mp4">
+  </video>
+  <div class="container">
     <div class="team-container">
       <h2 class="team-heading">Convener</h2>
       <div class="ceo">
@@ -190,7 +202,7 @@
         
 
       </div>
-    </div>
+    </div></div>
   </body>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBZZ2HB9JG"></script>
